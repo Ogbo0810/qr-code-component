@@ -1,0 +1,117 @@
+/* *****************************************
+Table of Contents
+**- Root Styling
+***************************************** */
+@import url("https://fonts.google.com/specimen/Outfit");
+:root{
+--h-color: hsl(218, 44%, 22%);
+--bg-color: hsl(212, 45%, 89%);
+--p-color: hsl(220, 15%, 55%);
+--white: hsl(0, 0%, 100%);
+--h-weight: 700;
+--p-weight: 400;
+--h-font-size: 22px;
+--p-font-size: 15px;
+}
+
+
+/*=============================================
+Body Area
+=============================================*/
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* adding height(in vh) to a flex cntainer allows
+    you to be able to center any child element along 
+    the cross-axis  */
+}
+
+
+/*=============================================
+Component Area
+=============================================*/
+
+.comp{
+    background-color: var(--white);
+    width: 17.34%;
+    padding: 1.17%;
+    border-radius: 6%;
+    box-shadow: 0px 10px 25px -10px  hsl(220, 15%, 55%);
+
+
+
+
+}
+
+.component-img{
+    position: relative;
+    width: 100%;
+    height: 57.3%;
+    border-radius: 5%;
+}
+
+.component-heading{
+    font-family: Outfit;
+    font-size: var(--h-font-size);
+    color: var(--h-color);
+    font-weight: var(--h-weight);
+    text-align: center;
+    padding: 0;
+}
+
+.component-paragraph{
+    font-family: Outfit;
+    text-align: center;
+    font-size: var(--p-font-size);
+    color: var(--p-color);
+    margin-bottom: 7%;
+}
+
+/*=============================================
+Attribution Area
+=============================================*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*=============================================
+Mobile Devices (max width 0f 600px)
+=============================================*/
+@media only screen and (max-width: 600px) {
+ .comp{
+    width: 85%;
+    padding: 3.17%;
+    border-radius: 6%;
+ }
+
+ .component-heading{
+    font-size: 45px;
+ }
+
+ .component-paragraph{
+    font-size: 33px;
+    margin-bottom: 7%;
+ }
+}
+
+/*=============================================
+Mobile Devices (max width 0f 375px)
+=============================================*/
+@media only screen and (max-width: 376px) {
+    .comp{
+       width: 85%;
+       padding: 3.17%;
+       border-radius: 6%;
+    }
+   
+    .component-heading{
+       font-size: 27px;
+    }
+   
+    .component-paragraph{
+       font-size: 20px;
+       margin-bottom: 7%;
+    }
+   }
